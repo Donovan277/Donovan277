@@ -374,6 +374,7 @@ footer{
         flex-direction: row;
         align-items: center;
         hr{
+            display: block;
             width: 15px;
             margin: auto 10px;
             background-color: var(--color-primary);
@@ -382,4 +383,5 @@ footer{
             margin-top: 0;
         }
     }
+
 }
