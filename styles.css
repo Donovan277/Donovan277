@@ -192,7 +192,7 @@ form{
 }
 
 .contact-content{
-    height: 150vh;
+    height: 1500px;
 }
 
 /* Resume */
@@ -433,4 +433,5 @@ footer{
             height: 24px;
         }
     }
+
 }
