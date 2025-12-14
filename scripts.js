@@ -1,5 +1,4 @@
 let hamburger = document.querySelector('.hamburger');
-
 hamburger.addEventListener('click', e => {
     let handle;
     let header = document.querySelector('header');
@@ -14,9 +13,9 @@ hamburger.addEventListener('click', e => {
 
     handle.classList.toggle('toggle');
     nav.classList.toggle('open');
-    nav.style.height = nav.offsetHeight === 0 ? links.offsetHeight + 'px': '0px';
+    nav.style.height = nav.classList.contains('open') ? links.offsetHeight + 'px': '0px';
     addEventListener('resize', a => {
-        if(document.offsetWidth > '768px'){
+        if(window.innerWidth > 768){
             hamburger.classList.remove('toggle');
             nav.classList.remove('open');
             nav.style.height = "0px";
