@@ -1,4 +1,5 @@
 let hamburger = document.querySelector('.hamburger');
+// Hamburger button functionality
 hamburger.addEventListener('click', e => {
     let handle;
     let header = document.querySelector('header');
@@ -14,6 +15,7 @@ hamburger.addEventListener('click', e => {
     handle.classList.toggle('toggle');
     nav.classList.toggle('open');
     nav.style.height = nav.classList.contains('open') ? links.offsetHeight + 'px': '0px';
+    // Event listener for when the screen width is larger than the mobile breakpoint
     addEventListener('resize', a => {
         if(window.innerWidth > 768){
             hamburger.classList.remove('toggle');
