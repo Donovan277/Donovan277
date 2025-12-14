@@ -126,6 +126,7 @@ nav{
     overflow: hidden;
     transition: all 0.5s;
     max-width: 100vw;
+    align-items: center;
     ul{
         position: absolute;
         list-style: none;
