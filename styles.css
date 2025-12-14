@@ -73,6 +73,12 @@ header{
     display: flex;
     align-items: center;
     max-height: 150px;
+    img{
+        max-width: 50%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
     &:hover{
         text-decoration: none;
     }
@@ -202,6 +208,12 @@ form{
 
 .contact-content{
     height: 150vh;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Resume */
@@ -416,6 +428,14 @@ footer{
             }
         }
     }
+    .logo{
+        h2{
+            font-size: 2.488rem;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
     .logo:hover{
         color: var(--color-primary);
     }
@@ -464,5 +484,8 @@ footer{
             width: 24px;
             height: 24px;
         }
+    }
+    .contact-info{
+        align-items: self-start;
     }
 }

@@ -16,9 +16,11 @@ hamburger.addEventListener('click', e => {
     nav.classList.toggle('open');
     nav.style.height = nav.offsetHeight === 0 ? links.offsetHeight + 'px': '0px';
     addEventListener('resize', a => {
-        hamburger.classList.remove('toggle');
-        nav.classList.remove('open');
-        nav.style.height = "0px";
+        if(document.offsetWidth > '768px'){
+            hamburger.classList.remove('toggle');
+            nav.classList.remove('open');
+            nav.style.height = "0px";
+        }
     })
 })
 
