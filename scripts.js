@@ -22,22 +22,6 @@ hamburger.addEventListener('click', e => {
     })
 })
 
-let receipt = document.querySelector("#receipt");
-let submit = DocumentTimeline.querySelector("#submitButton");
-let submitted = false;
-receipt.addEventListener('click', e => {
-    if(receipt.checked){
-        receipt.value = "true";
-    }
-    else{
-        receipt.value = "false";
-    }
-})
-function submitForm(){
-    window.location = 'thanks.html'
-    console.log("Working");
-}
-
 var myGamePiece;
 var myObstacles = [];
 var myScore;

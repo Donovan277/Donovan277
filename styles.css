@@ -12,21 +12,30 @@ body{
 
 h1{
     font-size: 2.986rem;
+    margin: 0;
 }
 h2{
     font-size: 2.488rem;
+    margin: 0;
 }
 h3{
     font-size: 2.074rem;
+    margin: 0;
 }
 h4{
     font-size: 1.728rem;
+    margin: 0;
 }
 h5{
     font-size: 1.44rem;
+    margin: 0;
 }
 h6{
     font-size: 1.2rem;
+    margin: 0;
+}
+p{
+    margin: 0;
 }
 
 /* Backgrounds */
@@ -192,12 +201,14 @@ form{
 }
 
 .contact-content{
-    height: 1050px;
+    height: 150vh;
 }
 
 /* Resume */
 .resume{
-    max-width: 15cm;
+    *{
+        max-width: 15cm;
+    }
     hr{
         background-color: var(--color-primary);
         max-width: 100px;
@@ -217,6 +228,7 @@ form{
     h1{
         margin-top: 15px;
     }
+
 }
 
 .resume-section{
@@ -258,6 +270,21 @@ form{
     }
     hr{
         display: none
+    }
+}
+
+.resume-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    h2{
+        margin-bottom: 16px;
+    }
+    a{
+        color: var(--color-primary);
     }
 }
 
@@ -404,6 +431,11 @@ footer{
     .desktop{
         display: block;
     }
+    .resume{
+        padding: 64px; 
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px gray;
+    }
     .resume-contact{
         flex-direction: row;
         p:nth-child(2){
@@ -433,7 +465,4 @@ footer{
             height: 24px;
         }
     }
-
 }
-
-
